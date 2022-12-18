@@ -9,7 +9,6 @@ const ThroughDirectory = (path, channel) => {
       if (dirent.isDirectory()) {
         return getFiles(dirpath + '/' + dirent.name, retArray);
       } else {
-        console.log(dirpath, dirent);
         if (dirent.name.split('.')[0] === channel) {
           resultArray.push(dirpath + '/' + dirent.name);
         }

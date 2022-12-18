@@ -84,12 +84,6 @@ export default function App() {
     if (channel === "Empty" || channel === undefined || channel === "") return;
     const fileNameData = await getAllFiles(adType, medType, channel);
     var filedatalist = fileNameData.file;
-    // var logodatalist = fileNameData.logo;
-    // console.log(fileNameData.logo);
-    // var logodatalist = fileNameData.logo.data.data;
-    // var textdatalist = fileNameData.text.data.data;
-    // var logodatalist = [];
-    // var textdatalist = [];
 
     if (filedatalist.length < 1) {
       setGridData([]);
@@ -167,7 +161,6 @@ export default function App() {
             });
           }
         }
-        console.log(tempGridData);
         setGridData(tempGridData);
       });
   };
@@ -224,7 +217,6 @@ export default function App() {
   useEffect(() => {}, [logoImgURL]);
 
   useEffect(() => {
-    console.log(textURL);
     if (textURL) {
       fetch(textURL)
         .then(function (response) {

@@ -66,8 +66,6 @@ export const getAllFiles = async (adType, medType, channelName) => {
   // var logoInfFilePath = "source/" + medType + "/" + adType + "/logo.csv";
   // const logoData = getLogoData(fileData, logoInfFilePath);
 
-  // console.log(logoData);
-
   // const res_logo = await axios.get(
   //   "http://localhost:3001/api/logos?channel=" + channelName
   // );
